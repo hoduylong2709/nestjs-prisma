@@ -1,8 +1,9 @@
 import { Module } from '@nestjs/common';
 import { TweetsModule } from './module/tweets/tweets.module';
+import { ApiModule } from './api/api.module';
 
 @Module({
-  imports: [TweetsModule],
+  imports: [TweetsModule, ApiModule],
   controllers: [],
   providers: [],
 })
